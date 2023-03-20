@@ -1,0 +1,62 @@
+/*reset*/
+* {
+    /*Estilos genericos*/
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/*Estilos Generales*/
+
+/*Nav Bar*/
+.navbar {
+    background-color: #140C0A;
+}
+/*Textos*/
+/*p{
+    margin: 0%;
+    padding: 5%;
+    text-align:center ;
+}*/
+h1{
+    font-size: xx-large;
+}
+/*Footer*/
+.estfoot{
+        background-color: #140C0A;
+}
+
+
+
+/*Index*/
+.index{
+    background-image: url(../media/imagenesvarias/florian-klauer-mk7D-4UCfmg-unsplash.jpg);
+    }
+.qs{
+text-align: left;
+}
+
+
+/*Tattoo*/
+
+
+/*Bakery*/
+/*Header*/
+
+/*.hbk{
+background-image: url(../media/bakery/pexels-davide-baraldi-1739748.jpg);
+padding: 0;
+margin: 0%;
+width: auto;
+height: 500px;
+}*/
+
+/*Barber Shop*/
+
+/*Art Galery*/
+
+/*Contacto*/

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Jodie\ Garland\ Regular;
+    src: url(../Fonts/jodie_garland/Jodie\ Garland\ Regular.ttf);
+}
+
+@font-face {
+    font-family: BLKCHCRY;
+    src: url(../Fonts/black_chancery/BLKCHCRY.TTF);
+}
+
+@font-face {
+    font-family: Poppins-BoldItalic;
+    src: url(../Fonts/poppins/Poppins-BoldItalic.otf);
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../Fonts/poppins/Poppins-Light.otf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../Fonts/poppins/Poppins-Regular.otf);
+}
+
+@font-face {
+    font-family: Poppins-ExtraLight;
+    src: url(../Fonts/poppins/Poppins-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../Fonts/poppins/Poppins-Medium.otf);
+}
+
+@font-face {
+    font-family: Abdillah\ FREE;
+    src: url(../Fonts/abdillah/Abdillah\ FREE.otf);
+}
+
+@font-face {
+    font-family: JosefinSans-Light;
+    src: url(../Fonts/josefin-sans/JosefinSans-Light.ttf);
+}
