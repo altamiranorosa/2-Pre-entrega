@@ -3,20 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="media/favicon.ico">
 
-    <title>Casa Rufina</title>
+    <title>Casa Ruffina</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
     <!-- Fin bootstrap CSS -->
     <!-- Estilo personalizado -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <!-- Fin estilo personalizado -->
 </head>
 
@@ -61,13 +61,18 @@
     <!-- Final navbar -->
     <!-- Page Content -->
     <main>
-        <div class="container">
-            <div class="col-md-10 p-lg-10 mx-auto my-10">
-                <h1 class="display-1 fw-normal">Casa Ruffina</h1>
-                <p class="lead fw-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate
+
+        <!-- Encabezado -->
+        <div class="tamano">
+            <div class="ruff_es col-md-10 p-lg-10 mx-auto my-10">
+                <h1 class="display-1 fw-normal ruffina">Casa Ruffina</h1>
+
+                <p class="lead fw-normal text_ruff">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                    cupiditate
                     quidem accusamus harum repellat commodi nostrum itaque corporis veniam corrupti?</p>
-                <h2 class="qs display-6 fw-normal">¿Quienes somos?</h2>
-                <p class="lead fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatibus,
+                <h2 class="qs display-6 fw-normal">¿Quiénes somos?</h2>
+                <p class="lead fw-normal text_ruff">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                    voluptatibus,
                     dolore laboriosam expedita, itaque quod impedit molestiae minus ad nesciunt a eaque suscipit
                     consequuntur accusamus quas, dicta rerum incidunt alias temporibus illo. Explicabo, ab impedit quam
                     perspiciatis omnis nisi consequatur pariatur qui corporis consectetur autem nemo sint non. Officia
@@ -78,84 +83,85 @@
                     corporis facere. </p>
 
             </div>
-            
+
             <!--Galería-->
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
+            <div class="grid_index row row-cols-1 row-cols-md-auto g-4 ">
+                <div class="gal_index col">
+                    <div class="foto_index card text-center" style="width: 18rem;">
                         <img class="card-img-top" src="media/tattoo/allef-vinicius-9_EknAv_9Hw-unsplash.jpg"
                             alt="Card image cap" height="20%">
                         <div class="card-body">
-                            <h5 class="card-title">Tattoo</h5>
+                            <h2 class="card-title text-center">Tattoo</h2>
                             <p class="card-text">Descubrinos. El arte te está esperando.</p>
-                            <a href="html/tattoo.html" class="btn btn-primary">Ir a Ruffina's Tattoo</a>
+                            <a href="html/tattoo.html" class="btn btn-outline-primary">Ir a Ruffina's Tattoo</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="media/barbershop/rafael-romero-6F9KWbQFQ44-unsplash.jpg"
-                                alt="Card image cap" height="20%">
-                            <div class="card-body">
-                                <h5 class="card-title">Barber Shop</h5>
-                                <p class="card-text">Sacá tu turno para tener el mejor style</p>
-                                <a href="html/barber-shop.html" class="btn btn-primary">Ir a Barber Shop</a>
-                            </div>
+                <div class="gal_index col">
+                    <div class="foto_index card text-center" style="width: 18rem;">
+                        <img class="card-img-top" src="media/barbershop/rafael-romero-6F9KWbQFQ44-unsplash.jpg"
+                            alt="Card image cap" height="20%">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">Barber Shop</h2>
+                            <p class="card-text">Sacá tu turno para tener el mejor style</p>
+                            <a href="html/barber-shop.html" class="btn btn-outline-primary">Ir a Barber Shop</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="media/bakery/Adorb.png" alt="Card image cap" height="20%">
-                            <div class="card-body">
-                                <h5 class="card-title">Bakery</h5>
-                                <p class="card-text">Las mejores delicatessens te esperan en nuestra
-                                    pastelería</p>
-                                <a href="html/bakery.html" class="btn btn-primary">Ir a Bakery</a>
-                            </div>
+                <div class="gal_index col">
+                    <div class="foto_index card text-center" style="width: 18rem;">
+                        <img class="card-img-top" src="media/bakery/Adorb.png" alt="Card image cap" height="20%">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">Bakery</h2>
+                            <p class="card-text">Exquisitas delicatessens te esperan en nuestra
+                                pastelería</p>
+                            <a href="html/bakery.html" class="btn btn-outline-primary">Ir a Bakery</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="./media/artgallery/marius-girard-_8zO0LaCxRQ-unsplash.jpg" alt="Card image cap" height="20%">
-                            <div class="card-body">
-                                <h5 class="card-title">Art Galery</h5>
-                                <p class="card-text">Los mejores artistas emergentes, en un solo lugar.</p>
-                                <a href="./html/art-galery.html" class="btn btn-primary">Ir a Galería de Arte</a>
-                            </div>
+                <div class="gal_index col">
+                    <div class="foto_index card text-center" style="width: 18rem;">
+                        <img class="card-img-top" src="./media/artgallery/marius-girard-_8zO0LaCxRQ-unsplash.jpg"
+                            alt="Card image cap" height="20%">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">Art Galery</h2>
+                            <p class="card-text">Los mejores artistas emergentes, en un solo lugar.</p>
+                            <a href="./html/art-galery.html" class="btn btn-outline-primary">Ir a Galería de
+                                Arte</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </main>
     <!-- Final Page Content -->
+
     <!-- Footer -->
     <footer class="estfoot d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-muted">© 2023 Rocko, inc</p>
+
         <a href="/"
             class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
             <svg class="bi me-2" width="40" height="32">
                 <use xlink:href="#bootstrap"></use>
             </svg>
         </a>
+
         <ul class="nav col-md-6 justify-content-end">
-            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="html/tattoo.html" class="nav-link px-2 text-muted">Tattoo</a></li>
-            <li class="nav-item"><a href="html/barber-shop.html" class="nav-link px-2 text-muted">Barber Shop</a>
+            <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="../html/tattoo.html" class="nav-link px-2 text-muted">Tattoo</a></li>
+            <li class="nav-item"><a href="../html/barber-shop.html" class="nav-link px-2 text-muted">Barber Shop</a>
             </li>
-            <li class="nav-item"><a href="html/bakery.html" class="nav-link px-2 text-muted">Bakery</a></li>
-            <li class="nav-item"><a href="html/art-galery.html" class="nav-link px-2 text-muted">Galeria de
+            <li class="nav-item"><a href="../html/bakery.html" class="nav-link px-2 text-muted">Bakery</a></li>
+            <li class="nav-item"><a href="../html/art-galery.html" class="nav-link px-2 text-muted">Galeria de
                     arte</a></li>
-            <li class="nav-item"><a href="html/contactanos.html" class="nav-link px-2 text-muted">Contactanos</a>
+            <li class="nav-item"><a href="../html/contactanos.html" class="nav-link px-2 text-muted">Contactanos</a>
             </li>
         </ul>
     </footer>
     <!-- Final Footer -->
+
     <!-- js -->
     <script src="js/bootstrap.bundle.js"></script>
     <!-- Fin js -->

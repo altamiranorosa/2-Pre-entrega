@@ -61,68 +61,78 @@
         <!-- Page Content -->
         <main>
             <!--Encabezado-->
-            <h1>Realiza tu reserva!</h1>
-            <p>Completá con tus datos para realizar tu reserva en los estudios de Ruffina's Tattoo o para nuestra
-                Barbería.
-                También podrás contactarnos para cualquier duda o consulta. Te esperamos!</p>
+            <section class="container">
+                <div class="reserva">
+                    <h1 class="titulo_reserva">Realiza tu reserva!</h1>
+                    <p>Completá con tus datos para realizar tu reserva en los estudios de Ruffina's Tattoo o para nuestra
+                        Barbería.
+                        También podrás contactarnos para cualquier duda o consulta. Te esperamos!</p>
+                </div>
+                
+            </section>
+
 
             <!--Formulario de reserva-->
-            <form class="row g-3">
-                <!--Datos-->
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Nombre</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Apellido</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Teléfono</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <!--Menu desplegable-->
-                <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupSelect01">Reservar Turno</label>
-                    <select class="form-select" id="inputGroupSelect01">
-                        <option selected>Seleccionar...</option>
-                        <option value="1">Ruffina's Tattoo</option>
-                        <option value="2">Barber Shop</option>
-                    </select>
-                </div>
-                <!--Horarios-->
-                <label for="exampleDataList" class="form-label">Selecciona Turno</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Horarios...</option>
-                    <option value="1">Lun-Vier de 10hs a 13hs</option>
-                    <option value="2">Lun-Vier de 15hs a 18hs</option>
-                    <option value="3">Sáb de 10hs a 18hs</option>
-                </select>
-                <!--Comentarios-->
-                <h5>Comentarios y consultas</h5>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario o consulta y te
-                        estaremos contactando</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-
-
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Enviar formulario
-                        </label>
+            <div class="container">
+                <form class="row g-3">
+                    <!--Datos-->
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Nombre</label>
+                        <input type="email" class="form-control" id="inputEmail4">
                     </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Aceptar</button>
-                </div>
-            </form>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Apellido</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Teléfono</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    
+                    <!--Horarios-->                    
+                    <label for="exampleDataList" class="form-label"> <h5>Selecciona Turno</h5></label>
+                    <!--Menu desplegable-->
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Reservar Turno</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Seleccionar...</option>
+                            <option value="1">Ruffina's Tattoo</option>
+                            <option value="2">Barber Shop</option>
+                        </select>
+                    </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Horarios...</option>
+                        <option value="1">Lun-Vier de 10hs a 13hs</option>
+                        <option value="2">Lun-Vier de 15hs a 18hs</option>
+                        <option value="3">Sáb de 10hs a 18hs</option>
+                    </select>
+                    <!--Comentarios-->
+                    <h5>Comentarios y consultas</h5>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario o consulta y te
+                            estaremos contactando</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+    
+    
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Enviar formulario
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-outline-primary">Aceptar</button>
+                    </div>
+                </form>
+            </div>
+           
         </main>
 
 
