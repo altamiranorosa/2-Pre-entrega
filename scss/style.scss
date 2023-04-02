@@ -1,135 +1,43 @@
-/*reset*/
-* {
-  /*Estilos genericos*/
-  margin: 0;
-  padding: 0%;
-  box-sizing: border-box;
-  list-style: none;
-}
-
-/*Estilos Generales*/
-a {
-  text-decoration: none;
-}
-
-.btn-outline-primary {
-  --bs-btn-color: #140C0A;
-  --bs-btn-border-color: #140C0A;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #140C0A;
-  --bs-btn-hover-border-color: #140C0A;
-  --bs-btn-focus-shadow-rgb: 13, 110, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #140C0A;
-  --bs-btn-active-border-color: #140C0A;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #140C0A;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #140C0A;
-  --bs-gradient: none;
-}
-
-
-
-/* Fuentes */
-@font-face {
-  font-family: blkchry;
-  src: url(../Fonts/black_chancery/BLKCHCRY.TTF);
-}
-
-@font-face {
-  font-family: poppins-light;
-  src: url(../Fonts/poppins/Poppins-Light.otf);
-}
-
-@font-face {
-  font-family: poppins-extralight;
-  src: url(../Fonts/poppins/Poppins-ExtraLight.otf);
-}
-
-@font-face {
-  font-family: poppins-regular;
-  src: url(../Fonts/poppins/Poppins-Regular.otf);
-}
-
-@font-face {
-  font-family: poppins-medium;
-  src: url(../Fonts/poppins/Poppins-Medium.otf);
-}
-
-@font-face {
-  font-family: poppins-bold;
-  src: url(../fonts/poppins/Poppins-Bold.otf);
-}
-
-@font-face {
-  font-family: jodie_garland\regular;
-  src: url(../fonts/jodie_garland/Jodie\ Garland\ Regular.ttf);
-}
-
-@font-face {
-  font-family: whiteamour-script;
-  src: url(../fonts/whiteamour_san_serif/Whiteamour-Script-DEMO.otf);
-}
-
-@font-face {
-  font-family: whiteamour-sanSerif;
-  src: url(../fonts/whiteamour_san_serif/Whiteamour-SanSerif-DEMO.otf);
-}
-
-@font-face {
-  font-family: reey;
-  src: url(../fonts/reey/Reey-Regular.otf);
-}
-
-@font-face {
-  font-family: abdillah\free;
-  src: url(../Fonts/abdillah/Abdillah\ FREE.otf);
-}
-
-
+@import "partials/variables";
+@import "partials/fonts";
+@import "partials/reset";
+@import "partials/mixin";
 
 /*Nav Bar*/
 .navbar {
-  background-color: #140C0A;
+  background-color: $color-ruff;
 
   .nav-item {
-    font-family: poppins-extralight;
+    font-family: $fontfam-xlight;
     font-size: small;
   }
 }
 
 /*Footer*/
 .estfoot {
-  font-family: poppins-extralight;
+  font-family: $fontfam-xlight;
   font-size: small;
-  background-color: #140C0A;
+  background-color: $color-ruff;
   margin: 0;
   display: flex;
 }
 
 /*Botones*/
 .btn {
-  font-family: poppins-light;
+  font-family: $fontfam-light;
 }
 
 /*Textos*/
 em {
-  font-family: poppins-bold;
+  font-family: $fontsize-bold;
   font-size: 1rem;
 }
-
-
-/*Contenedores*/
-
-
-
 
 /*Index*/
 
 .grid_index {
   display: flex;
-  width: 100%;
+  @include size (100%);
   margin: 0;
   padding: 0;
   justify-content: space-between;
@@ -143,7 +51,7 @@ em {
 }
 
 .ruff_es {
-  width: 100%;
+  @include size (100%);
   margin: 0;
   padding: 1rem;
   text-align: justify;
@@ -152,7 +60,7 @@ em {
 }
 
 .ruffina {
-  width: 100%;
+  @include size (100%);
   font-family: whiteamour-script;
   text-align: center;
   font-size: 9.375rem;
@@ -168,28 +76,28 @@ em {
 }
 
 .text_ruff {
-  width: 100%;
-  font-family: poppins-light;
-  font-size: medium;
+  @include size (100%);
+  font-family: $fontfam-light;
+  font-size: $fontsizeparrafo;
   margin-top: 1.125rem;
   margin-bottom: 1.125rem;
   padding-top: .3125rem;
   padding-bottom: 2.5rem;
   justify-content: center;
-
+  text-align: justify;
 }
 
 .qs {
-  font-family: poppins-regular;
+  font-family: $fontfam-regular;
   text-align: left;
-  font-size: 1.8rem;
+  font-size: $fontsizetitulo2;
   margin-top: 3.125rem;
   padding-top: .3125rem;
   text-align: justify;
 }
 
 h2 {
-  font-family: poppins-medium;
+  font-family: $fontfam-medium;
   text-align: center;
   font-size: 2rem;
 }
@@ -200,9 +108,9 @@ h2 {
 
 /*Texto*/
 .tit-tat {
-  width: 100%;
+  @include size (100%);
   font-family: blkchry;
-  font-size: 7rem;
+  font-size: $fontsizetitulo;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -235,11 +143,11 @@ h2 {
 /* textos */
 .titulo_bakery {
   display: flex;
-  margin: 3.125 0 3.125 0;
+  margin: 3.125;
   padding: 2 rem;
   font-family: abdillah\free;
-  font-size: 10rem;
-  color: #140C0A;
+  font-size: $fontsizetitulo;
+  color: $color-ruff;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -247,18 +155,18 @@ h2 {
 }
 
 .hbk {
-  width: 100%;
+  @include size (100%);
   text-align: justify;
   text-align: center;
   align-items: center;
-
-}
-
-.text-container {
-  background-color: aqua;
 }
 
 
+.display-1 {
+  font-size: calc(8rem + 4.5vw);
+  font-weight: 18.75rem;
+  line-height: 1.2;
+}
 
 /*Barber Shop*/
 
@@ -267,65 +175,59 @@ h2 {
   display: flex;
   margin-top: 2.5rem;
   padding: 1.25rem;
-  font-family: poppins-light;
+  font-family: $fontfam-light;
   font-size: 2rem;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-
- .titulo_barbados {
-  width: 100%;
+.titulo_barbados {
+  display: flex;
+  margin: 1.25rem;
   font-family: jodie_garland\regular;
-  font-size: 7rem;
+  font-size: $fontsizetitulo;
+  padding-bottom: 4rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
- 
 
+}
 
 h3.trabajos_barber {
   margin-top: 2.5rem;
   margin-bottom: 0;
-  padding: 1.25rem;
-  font-family: poppins-light;
-  font-size: 2rem;
-  text-align: center;
+  padding-top: 3.25rem;
+  font-family: $fontfam-light;
+  font-size: 1.8rem;
+  text-align: left;
   justify-content: center;
-
 }
 
 .barpres {
-  margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-  padding: 0.625rem;
-  font-family: poppins-light;
-  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  font-family: $fontfam-light;
+  font-size: medium;
   text-align: center;
+  text-align: justify;
   justify-content: center;
-
 }
-
-
 
 /* Galería de imagenes */
 
 .grid-galeria {
   display: flex;
-  width: 100%;
-  height: 39.375rem;
+  @include size (100%, 399.375rem);
   flex-shrink: 1;
   justify-content: center;
   align-content: center;
   padding: 0;
 }
 
-
-
 .barber {
-  width: 0;
+  @include size (0);
   flex-grow: 1;
   object-fit: cover;
   opacity: .8;
@@ -333,7 +235,7 @@ h3.trabajos_barber {
 
   &:hover {
     cursor: crosshair;
-    width: 18.75rem;
+    @include size (18.75rem);
     opacity: 1;
     filter: contrast(120%);
   }
@@ -345,70 +247,64 @@ h3.trabajos_barber {
 /* Textos */
 .titulo_gal {
   display: flex;
-  width: auto;
-  height: 20rem;
+  @include size (auto,20rem);
   margin: 3.125rem;
   padding: .625rem;
   justify-content: center;
   align-content: center;
-
+  background-color: aqua;
 }
 
 .name_gallery {
-  width: 100%;
+  @include size (auto);
   margin: 3.125rem;
-
+  padding: 2rem;
   font-family: reey;
-  font-size: 6.25rem;
+  font-size: $fontsizetitulo;
   justify-content: center;
   text-align: center;
-
 
 }
 
 .artista {
-  font-family: poppins-medium;
+  font-family: $fontfam-medium;
   font-size: 2rem;
   text-align: center;
-  color: #140C0A;
+  color: $color-ruff;
   padding: .3125rem;
 }
 
 .obra {
-  font-family: poppins-light;
+  font-family: $fontfam-light;
   font-size: 1rem;
-
   text-align: left;
-  color: #140C0A;
+  color: $color-ruff;
   padding: .625rem;
-
 }
 
 /* imágenes */
 .foto img {
-  width: auto;
+  @include size (auto);
   height: 28.125rem;
   gap: .625rem;
 }
 
 .grid_galeriadearte {
   display: flex;
-  width: 100%;
+  @include size (100%);
   margin: .32rem;
   padding: .625rem;
   justify-content: center;
   align-content: center;
-
 }
 
 .prueba_galeria {
   display: flex;
-  width: 100%;
+  @include size (100%);
   margin: .32rem;
   padding: .625rem;
   justify-content: center;
   align-content: center;
-
 }
 
 .foto {
@@ -417,9 +313,12 @@ h3.trabajos_barber {
   justify-content: center;
 }
 
+
+
 /*Contacto*/
+
 .reserva {
-  width: 100%;
+  @include size (100%);
   padding: 20px 0 20px 0;
   margin: 0;
 }
@@ -428,54 +327,24 @@ h3.trabajos_barber {
   margin: 0;
   padding: 20px 0 20px 0;
   text-align: left;
-  font-family: poppins-medium;
+  font-family: $fontfam-medium;
   font-size: xx-large;
-
 }
 
 h5 {
   margin: 0;
   padding: 20px 0 5px 0;
-  font-family: poppins-medium;
+  font-family: $fontfam-medium;
   text-align: left;
 }
 
-
-
-
-/* Barbería */
-
-
-
+.input-group-text {
+  color: $color-ruff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+}
 
 /* Media Queries */
-
-/* Mobile */
-
-@media screen and (max-widht:575px) {
-
-  .grid_galeriadearte {
-    width: auto;
-    justify-content: center;
-
-  }
-  /*barber*/
-  .grid-galeria {
-    display: flex;
-    width: 50rem;
-    height: 39.375rem;
-    flex-shrink: 1;
-    justify-content: center;
-  }
-  .titulo_barbados{
-    font-size: xx-large;
-    background-color: aqua;
-  }
-  /*galeria de arte*/
-  .name_gallery {
-    font-size: .625rem;
-    justify-content: center;
-    position: absolute;
-  }
-
-}
+@import "partials/queries";

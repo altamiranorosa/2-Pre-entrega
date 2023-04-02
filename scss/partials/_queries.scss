@@ -1,0 +1,31 @@
+/* Mobile */
+
+@media screen and (max-widht:575px) {
+
+    .grid_galeriadearte {
+      width: auto;
+      justify-content: center;
+  
+    }
+  
+    /*barber*/
+    .grid-galeria {
+      display: flex;
+      width: 50rem;
+      height: 39.375rem;
+      flex-shrink: 1;
+      justify-content: center;
+    }
+  
+    .titulo_barbados {
+      font-size: xx-large;
+     
+    }
+  
+    /*galeria de arte*/
+    .name_gallery {
+      font-size: .625rem;
+      justify-content: center;
+      position: absolute;
+    }
+    }
