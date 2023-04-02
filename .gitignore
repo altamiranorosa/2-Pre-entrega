@@ -78,5 +78,8 @@ $RECICLAJE.BIN/
 
 # Atajos de Windows
 *.lnk
+*notas
+*backup-css
+
 
 # Fin de https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode
