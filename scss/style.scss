@@ -29,19 +29,37 @@
 
 /*Textos*/
 em {
-  font-family: $fontsize-bold;
+  font-family: $fontfam-bold;
   font-size: 1rem;
 }
 
+/*Background*/
+body {
+  min-height: 100hv;
+  background: linear-gradient(rgba(247, 246, 255, .85), rgba(247, 246, 255, .85)), url(../media/imagenesvarias/optimizado.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+}
+
 /*Index*/
+.index-bg {
+  min-height: 100hv;
+  background: linear-gradient(rgba (7, 5, 12, .75), rgba(7, 5, 12, .75)) url(../media/imagenesvarias/optimizado.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 
 .grid_index {
   display: flex;
-  @include size (100%);
+  width: 100%;
   margin: 0;
   padding: 0;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .gal_index {
@@ -51,7 +69,7 @@ em {
 }
 
 .ruff_es {
-  @include size (100%);
+  width: 100%;
   margin: 0;
   padding: 1rem;
   text-align: justify;
@@ -60,7 +78,7 @@ em {
 }
 
 .ruffina {
-  @include size (100%);
+  width: 100%;
   font-family: whiteamour-script;
   text-align: center;
   font-size: 9.375rem;
@@ -76,7 +94,7 @@ em {
 }
 
 .text_ruff {
-  @include size (100%);
+  width: 100%;
   font-family: $fontfam-light;
   font-size: $fontsizeparrafo;
   margin-top: 1.125rem;
@@ -108,7 +126,7 @@ h2 {
 
 /*Texto*/
 .tit-tat {
-  @include size (100%);
+  width: 100%;
   font-family: blkchry;
   font-size: $fontsizetitulo;
   justify-content: center;
@@ -135,8 +153,11 @@ h2 {
   }
 
 }
-
-
+.img-port-tattoo{
+  display: flex;
+width: 100%;
+height: 45rem;
+}
 
 /*Bakery*/
 
@@ -144,28 +165,21 @@ h2 {
 .titulo_bakery {
   display: flex;
   margin: 3.125;
-  padding: 2 rem;
+  padding-top: 2rem;
+  padding-top: 5 rem;
   font-family: abdillah\free;
-  font-size: $fontsizetitulo;
+  font-size: 12rem;
   color: $color-ruff;
   text-align: center;
   justify-content: center;
   align-items: center;
-
 }
 
 .hbk {
-  @include size (100%);
+  width: 100%;
   text-align: justify;
   text-align: center;
   align-items: center;
-}
-
-
-.display-1 {
-  font-size: calc(8rem + 4.5vw);
-  font-weight: 18.75rem;
-  line-height: 1.2;
 }
 
 /*Barber Shop*/
@@ -219,7 +233,7 @@ h3.trabajos_barber {
 
 .grid-galeria {
   display: flex;
-  @include size (100%, 399.375rem);
+  @include size (100%, 39.375rem);
   flex-shrink: 1;
   justify-content: center;
   align-content: center;
@@ -227,7 +241,7 @@ h3.trabajos_barber {
 }
 
 .barber {
-  @include size (0);
+  width: 0;
   flex-grow: 1;
   object-fit: cover;
   opacity: .8;
@@ -235,7 +249,7 @@ h3.trabajos_barber {
 
   &:hover {
     cursor: crosshair;
-    @include size (18.75rem);
+    width: 18.75rem;
     opacity: 1;
     filter: contrast(120%);
   }
@@ -247,23 +261,25 @@ h3.trabajos_barber {
 /* Textos */
 .titulo_gal {
   display: flex;
-  @include size (auto,20rem);
+  @include size (auto, 20rem);
   margin: 3.125rem;
   padding: .625rem;
   justify-content: center;
-  align-content: center;
+  text-align: center;
   background-color: aqua;
 }
 
 .name_gallery {
-  @include size (auto);
-  margin: 3.125rem;
-  padding: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
   font-family: reey;
   font-size: $fontsizetitulo;
+  color: $color-ruff;
   justify-content: center;
   text-align: center;
-
 }
 
 .artista {
@@ -283,15 +299,20 @@ h3.trabajos_barber {
 }
 
 /* imágenes */
+.estilo-img {
+  height: 25rem;
+}
+
+
 .foto img {
-  @include size (auto);
+  width: auto;
   height: 28.125rem;
   gap: .625rem;
 }
 
 .grid_galeriadearte {
   display: flex;
-  @include size (100%);
+  width: 100%;
   margin: .32rem;
   padding: .625rem;
   justify-content: center;
@@ -300,7 +321,7 @@ h3.trabajos_barber {
 
 .prueba_galeria {
   display: flex;
-  @include size (100%);
+  width: 100%;
   margin: .32rem;
   padding: .625rem;
   justify-content: center;
@@ -318,7 +339,7 @@ h3.trabajos_barber {
 /*Contacto*/
 
 .reserva {
-  @include size (100%);
+  width: 100%;
   padding: 20px 0 20px 0;
   margin: 0;
 }

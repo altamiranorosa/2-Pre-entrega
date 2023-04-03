@@ -1,36 +1,5 @@
 @charset "UTF-8";
-/*reset*/
-* {
-  /*Estilos genericos*/
-  margin: 0;
-  padding: 0%;
-  box-sizing: border-box;
-  list-style: none;
-}
-
-/*Estilos Generales*/
-a {
-  text-decoration: none;
-}
-
-.btn-outline-primary {
-  --bs-btn-color: #140C0A;
-  --bs-btn-border-color: #140C0A;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #140C0A;
-  --bs-btn-hover-border-color: #140C0A;
-  --bs-btn-focus-shadow-rgb: 13, 110, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #140C0A;
-  --bs-btn-active-border-color: #140C0A;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #140C0A;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #140C0A;
-  --bs-gradient: none;
-}
-
-/* Fuentes */
+/*Variables*/ /* Fuentes */
 @font-face {
   font-family: blkchry;
   src: url(../Fonts/black_chancery/BLKCHCRY.TTF);
@@ -75,6 +44,38 @@ a {
   font-family: abdillah\f ree;
   src: url(../Fonts/abdillah/Abdillah\ FREE.otf);
 }
+/*Variables*/
+/*reset*/
+* {
+  /*Estilos genericos*/
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/*Estilos Generales*/
+a {
+  text-decoration: none;
+}
+
+.btn-outline-primary {
+  --bs-btn-color:#140C0A;
+  --bs-btn-border-color:#140C0A;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #140C0A;
+  --bs-btn-hover-border-color:#140C0A;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #140C0A;
+  --bs-btn-active-border-color: #140C0A;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #140C0A;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #140C0A;
+  --bs-gradient: none;
+}
+
 /*Nav Bar*/
 .navbar {
   background-color: #140C0A;
@@ -104,8 +105,23 @@ em {
   font-size: 1rem;
 }
 
-/*Contenedores*/
+/*Background*/
+body {
+  min-height: 100hv;
+  background: linear-gradient(rgba(247, 246, 255, 0.85), rgba(247, 246, 255, 0.85)), url(../media/imagenesvarias/optimizado.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /*Index*/
+.index-bg {
+  min-height: 100hv;
+  background: linear-gradient(rgba 7, 5, 12, 0.75, rgba(7, 5, 12, 0.75)) url(../media/imagenesvarias/optimizado.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .grid_index {
   display: flex;
   width: 100%;
@@ -201,14 +217,21 @@ h2 {
   text-align: justify;
 }
 
+.img-port-tattoo {
+  display: flex;
+  width: 100%;
+  height: 45rem;
+}
+
 /*Bakery*/
 /* textos */
 .titulo_bakery {
   display: flex;
   margin: 3.125;
-  padding: 2 rem;
+  padding-top: 2rem;
+  padding-top: 5 rem;
   font-family: abdillah\f ree;
-  font-size: 8rem;
+  font-size: 12rem;
   color: #140C0A;
   text-align: center;
   justify-content: center;
@@ -220,16 +243,6 @@ h2 {
   text-align: justify;
   text-align: center;
   align-items: center;
-}
-
-.text-container {
-  background-color: aqua;
-}
-
-.display-1 {
-  font-size: calc(8rem + 4.5vw);
-  font-weight: 18.75rem;
-  line-height: 1.2;
 }
 
 /*Barber Shop*/
@@ -311,14 +324,19 @@ h3.trabajos_barber {
   margin: 3.125rem;
   padding: 0.625rem;
   justify-content: center;
-  align-content: center;
+  text-align: center;
+  background-color: aqua;
 }
 
 .name_gallery {
   width: 100%;
-  margin: 3.125rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
   font-family: reey;
-  font-size: 6.25rem;
+  font-size: 7rem;
+  color: #140C0A;
   justify-content: center;
   text-align: center;
 }
@@ -340,6 +358,10 @@ h3.trabajos_barber {
 }
 
 /* imágenes */
+.estilo-img {
+  height: 25rem;
+}
+
 .foto img {
   width: auto;
   height: 28.125rem;
@@ -417,7 +439,6 @@ h5 {
   }
   .titulo_barbados {
     font-size: xx-large;
-    background-color: aqua;
   }
   /*galeria de arte*/
   .name_gallery {
