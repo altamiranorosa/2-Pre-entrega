@@ -147,19 +147,21 @@ body {
 }
 
 .ruffina {
-  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
   font-family: whiteamour-script;
-  text-align: center;
-  font-size: 9.375rem;
-  margin-top: 3.125rem;
-  margin-bottom: 1.125rem;
-  padding-top: 0.3125rem;
-  padding-bottom: 3.125rem;
+  font-size: 6rem;
+  color: #140C0A;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #140C0A;
 }
 
 .tamano {
-  margin: 50px;
+  margin: 0.5rem;
 }
 
 .text_ruff {
@@ -202,13 +204,13 @@ h2 {
 
 .tit-tat {
   display: flex;
+  margin: 1.25rem;
   font-family: blkchry;
   font-size: 6rem;
   color: #140C0A;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -246,16 +248,16 @@ h2 {
 /* textos */
 .titulo_bakery {
   display: flex;
-  margin: 3.125;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding-top: 2rem;
-  padding-top: 5 rem;
   font-family: abdillah\f ree;
-  font-size: 8rem;
-  font-display: auto;
+  font-size: 6rem;
   color: #140C0A;
-  text-align: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  color: #140C0A;
 }
 
 .pedido {
@@ -296,14 +298,16 @@ h3.trabajos-cards {
 
 .titulo_barbados {
   display: flex;
-  margin: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
   font-family: jodie_garlandregular;
   font-size: 6rem;
   color: #140C0A;
-  padding-bottom: 4rem;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #140C0A;
 }
 
 .barpres {
@@ -356,16 +360,18 @@ h3.trabajos-cards {
 }
 
 .name_gallery {
-  width: 100%;
+  display: flex;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding-top: 3rem;
   padding-bottom: 10rem;
   font-family: reey;
-  font-size: 6rem;
+  font-size: 5rem;
   color: #140C0A;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  color: #140C0A;
 }
 
 .artista {

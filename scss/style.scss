@@ -39,7 +39,6 @@ body {
   background: linear-gradient(rgba(247, 246, 255, .85), rgba(247, 246, 255, .85)), url(../media/imagenesvarias/optimizado.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
   background-position: center;
 }
 
@@ -51,7 +50,6 @@ body {
   background: linear-gradient(rgba (7, 5, 12, .75), rgba(7, 5, 12, .75)) url(../media/imagenesvarias/optimizado.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .grid_index {
@@ -80,19 +78,23 @@ body {
 }
 
 .ruffina {
-  width: 100%;
+
+
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
   font-family: whiteamour-script;
-  text-align: center;
-  font-size: 9.375rem;
-  margin-top: 3.125rem;
-  margin-bottom: 1.125rem;
-  padding-top: .3125rem;
-  padding-bottom: 3.125rem;
+  font-size: $fontsizetitulo;
+  color: $color-ruff;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $color-ruff;
 }
 
 .tamano {
-  margin: 50px;
+  margin: .5rem;
 }
 
 .text_ruff {
@@ -128,27 +130,26 @@ h2 {
 
 /*Texto*/
 .cont-tit {
-  display: flex;  
+  display: flex;
   flex-shrink: 1;
   margin-right: 7rem;
   margin-left: 7rem;
   gap: 1.25rem;
   padding: 1rem;
   justify-content: center;
-  
+
 }
 
 .tit-tat {
-  display: flex; 
+  display: flex;
+  margin: 1.25rem;
   font-family: blkchry;
   font-size: $fontsizetitulo;
   color: $color-ruff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   text-align: center;
-
 }
 
 .subtit-tatto {
@@ -189,38 +190,41 @@ h2 {
 /* textos */
 .titulo_bakery {
   display: flex;
-  margin: 3.125;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding-top: 2rem;
-  padding-top: 5 rem;
   font-family: abdillah\free;
-  font-size: 8rem ;
-  font-display: auto;
+  font-size: $fontsizetitulo;
   color: $color-ruff;
-  text-align: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  color: $color-ruff;
 }
-.pedido{
+
+.pedido {
   height: 15rem;
   padding-top: 12rem;
-  
+
 }
+
 /*Imagenes*/
 h3.trabajos-cards {
   font-family: $fontfam-light;
   font-size: 1.5rem;
-  text-align:center;
+  text-align: center;
   justify-content: center;
 }
 
 .card.gal-boulangerie {
-height: 15rem;
-width: 12rem;
+  height: 15rem;
+  width: 12rem;
 }
-.col.boul{
-  justify-content:center;
 
-padding: 1rem;
+.col.boul {
+  justify-content: center;
+
+  padding: 1rem;
 
 }
 
@@ -239,16 +243,20 @@ padding: 1rem;
 }
 
 .titulo_barbados {
+
+
+
   display: flex;
-  margin: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
   font-family: jodie_garland\regular;
   font-size: $fontsizetitulo;
   color: $color-ruff;
-  padding-bottom: 4rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  color: $color-ruff;
 }
 
 .barpres {
@@ -303,16 +311,18 @@ padding: 1rem;
 }
 
 .name_gallery {
-  width: 100%;
+  display: flex;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding-top: 3rem;
   padding-bottom: 10rem;
   font-family: reey;
-  font-size: $fontsizetitulo;
+  font-size: 5rem;
   color: $color-ruff;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  color: $color-ruff;
 }
 
 .artista {
@@ -402,4 +412,3 @@ h5 {
 
 /* Media Queries */
 @import "partials/queries";
-
