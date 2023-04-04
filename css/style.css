@@ -203,7 +203,8 @@ h2 {
 .tit-tat {
   display: flex;
   font-family: blkchry;
-  font-size: 7rem;
+  font-size: 6rem;
+  color: #140C0A;
   padding-top: 1rem;
   padding-bottom: 1rem;
   justify-content: center;
@@ -235,6 +236,13 @@ h2 {
 }
 
 /*Bakery*/
+.hbk {
+  width: 100%;
+  text-align: justify;
+  text-align: center;
+  align-items: center;
+}
+
 /* textos */
 .titulo_bakery {
   display: flex;
@@ -242,18 +250,35 @@ h2 {
   padding-top: 2rem;
   padding-top: 5 rem;
   font-family: abdillah\f ree;
-  font-size: 12rem;
+  font-size: 8rem;
+  font-display: auto;
   color: #140C0A;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-.hbk {
-  width: 100%;
-  text-align: justify;
+.pedido {
+  height: 15rem;
+  padding-top: 12rem;
+}
+
+/*Imagenes*/
+h3.trabajos-cards {
+  font-family: poppins-light;
+  font-size: 1.5rem;
   text-align: center;
-  align-items: center;
+  justify-content: center;
+}
+
+.card.gal-boulangerie {
+  height: 15rem;
+  width: 12rem;
+}
+
+.col.boul {
+  justify-content: center;
+  padding: 1rem;
 }
 
 /*Barber Shop*/
@@ -273,21 +298,12 @@ h2 {
   display: flex;
   margin: 1.25rem;
   font-family: jodie_garlandregular;
-  font-size: 7rem;
+  font-size: 6rem;
+  color: #140C0A;
   padding-bottom: 4rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-h3.trabajos_barber {
-  margin-top: 2.5rem;
-  margin-bottom: 0;
-  padding-top: 3.25rem;
-  font-family: poppins-light;
-  font-size: 1.8rem;
-  text-align: left;
-  justify-content: center;
 }
 
 .barpres {
@@ -346,7 +362,7 @@ h3.trabajos_barber {
   padding-top: 3rem;
   padding-bottom: 10rem;
   font-family: reey;
-  font-size: 7rem;
+  font-size: 6rem;
   color: #140C0A;
   justify-content: center;
   text-align: center;
