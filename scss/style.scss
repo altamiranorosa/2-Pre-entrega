@@ -43,6 +43,8 @@ body {
   background-position: center;
 }
 
+
+
 /*Index*/
 .index-bg {
   min-height: 100hv;
@@ -111,7 +113,7 @@ body {
   font-size: $fontsizetitulo2;
   margin-top: 3.125rem;
   padding-top: .3125rem;
-  text-align: justify;
+
 }
 
 h2 {
@@ -125,13 +127,27 @@ h2 {
 /*Tattoo*/
 
 /*Texto*/
+.cont-tit {
+  display: flex;  
+  flex-shrink: 1;
+  margin-right: 7rem;
+  margin-left: 7rem;
+  gap: 1.25rem;
+  padding: 1rem;
+  justify-content: center;
+  
+}
+
 .tit-tat {
-  width: 100%;
+  display: flex; 
   font-family: blkchry;
   font-size: $fontsizetitulo;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   text-align: center;
+
 }
 
 .subtit-tatto {
@@ -153,10 +169,11 @@ h2 {
   }
 
 }
-.img-port-tattoo{
+
+.img-port-tattoo {
   display: flex;
-width: 100%;
-height: 45rem;
+  width: 100%;
+  height: 45rem;
 }
 
 /*Bakery*/
@@ -369,3 +386,4 @@ h5 {
 
 /* Media Queries */
 @import "partials/queries";
+

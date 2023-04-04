@@ -1,24 +1,24 @@
 @charset "UTF-8";
-/*Variables*/ /* Fuentes */
+/*Variables*/ /*Fuentes*/
 @font-face {
   font-family: blkchry;
-  src: url(../Fonts/black_chancery/BLKCHCRY.TTF);
+  src: url(../fonts/black_chancery/BLKCHCRY.TTF);
 }
 @font-face {
   font-family: poppins-light;
-  src: url(../Fonts/poppins/Poppins-Light.otf);
+  src: url(../fonts/poppins/Poppins-Light.otf);
 }
 @font-face {
   font-family: poppins-extralight;
-  src: url(../Fonts/poppins/Poppins-ExtraLight.otf);
+  src: url(../fonts/poppins/Poppins-ExtraLight.otf);
 }
 @font-face {
   font-family: poppins-regular;
-  src: url(../Fonts/poppins/Poppins-Regular.otf);
+  src: url(../fonts/poppins/Poppins-Regular.otf);
 }
 @font-face {
   font-family: poppins-medium;
-  src: url(../Fonts/poppins/Poppins-Medium.otf);
+  src: url(../fonts/poppins/Poppins-Medium.otf);
 }
 @font-face {
   font-family: poppins-bold;
@@ -42,7 +42,7 @@
 }
 @font-face {
   font-family: abdillah\f ree;
-  src: url(../Fonts/abdillah/Abdillah\ FREE.otf);
+  src: url(../fonts/abdillah/Abdillah\ FREE.otf);
 }
 /*Variables*/
 /*reset*/
@@ -180,7 +180,6 @@ body {
   font-size: 1.8rem;
   margin-top: 3.125rem;
   padding-top: 0.3125rem;
-  text-align: justify;
 }
 
 h2 {
@@ -191,12 +190,24 @@ h2 {
 
 /*Tattoo*/
 /*Texto*/
+.cont-tit {
+  display: flex;
+  flex-shrink: 1;
+  margin-right: 7rem;
+  margin-left: 7rem;
+  gap: 1.25rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
 .tit-tat {
-  width: 100%;
+  display: flex;
   font-family: blkchry;
   font-size: 7rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   text-align: center;
 }
 
@@ -425,9 +436,9 @@ h5 {
 /* Media Queries */
 /* Mobile */
 @media screen and (max-widht: 575px) {
-  .grid_galeriadearte {
-    width: auto;
-    justify-content: center;
+  /*Tattoo*/
+  .tit-tat {
+    font-size: 1rem;
   }
   /*barber*/
   .grid-galeria {
@@ -438,12 +449,16 @@ h5 {
     justify-content: center;
   }
   .titulo_barbados {
-    font-size: xx-large;
+    font-size: x-large;
   }
   /*galeria de arte*/
   .name_gallery {
     font-size: 0.625rem;
     justify-content: center;
     position: absolute;
+  }
+  .grid_galeriadearte {
+    width: auto;
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
