@@ -152,7 +152,7 @@ body {
   margin-bottom: 2rem;
   padding-top: 2rem;
   font-family: whiteamour-script;
-  font-size: 6rem;
+  font-size: 8rem;
   color: #140C0A;
   justify-content: center;
   align-items: center;
@@ -172,6 +172,14 @@ body {
   margin-bottom: 1.125rem;
   padding-top: 0.3125rem;
   padding-bottom: 2.5rem;
+  justify-content: center;
+  text-align: justify;
+}
+
+.text_ruff2 {
+  width: 100%;
+  font-family: poppins-light;
+  font-size: medium;
   justify-content: center;
   text-align: justify;
 }
@@ -362,6 +370,7 @@ h3.trabajos-cards {
 .name_gallery {
   display: flex;
   margin-top: 2rem;
+  margin-left: 2rem;
   margin-bottom: 2rem;
   padding-top: 3rem;
   padding-bottom: 10rem;
