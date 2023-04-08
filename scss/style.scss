@@ -13,19 +13,34 @@
   }
 }
 
+.logo-ruff {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.ruffina-name {
+  font-family: whiteamour-script;
+  font-size: 2rem;
+}
+
+
 /*Footer*/
 .estfoot {
   font-family: $fontfam-xlight;
   font-size: small;
   background-color: $color-ruff;
   margin: 0;
-    display: flex;
- }
+  display: flex;
+  justify-content: center;
+}
+
 
 /*Botones*/
 .btn {
   font-family: $fontfam-light;
+  border-radius: 1.2rem;
 }
+
 
 /*Textos*/
 em {
@@ -55,9 +70,10 @@ body {
 .grid_index {
   display: flex;
   width: 100%;
-  margin-bottom:2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   padding: 0;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
 
 }
@@ -66,6 +82,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .ruff_es {
@@ -107,11 +124,12 @@ body {
   justify-content: center;
   text-align: justify;
 }
+
 .text_ruff2 {
   width: 100%;
   font-family: $fontfam-light;
   font-size: $fontsizeparrafo;
-  
+
   justify-content: center;
   text-align: justify;
 }
@@ -123,7 +141,15 @@ body {
   font-size: $fontsizetitulo2;
   margin-top: 3.125rem;
   padding-top: .3125rem;
+}
 
+.qs-c {
+  font-family: $fontfam-regular;
+  font-size: $fontsizetitulo2;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  text-align: center;
+ 
 }
 
 h2 {
@@ -180,11 +206,17 @@ h2 {
 
 }
 
+/*Imágenes tattoo*/
 .img-port-tattoo {
   display: flex;
   width: 100%;
   height: 45rem;
 }
+
+
+
+
+
 
 /*Bakery*/
 
@@ -231,10 +263,57 @@ h3.trabajos-cards {
 
 .col.boul {
   justify-content: center;
-
   padding: 1rem;
-
 }
+
+.gal-boulan:hover {
+  .pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
+
+
+
+
 
 /*Barber Shop*/
 
@@ -274,6 +353,16 @@ h3.trabajos-cards {
   text-align: justify;
   justify-content: center;
 }
+.barpres2 {
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: $fontfam-light;
+  font-size: medium;
+  text-align: center;
+  text-align: justify;
+  justify-content: center;
+}
 
 /* Galería de imagenes */
 
@@ -291,7 +380,7 @@ h3.trabajos-cards {
   flex-grow: 1;
   object-fit: cover;
   opacity: .8;
-  transition: .2s ease;
+  transition: .1s ease;
 
   &:hover {
     cursor: crosshair;
@@ -350,6 +439,7 @@ h3.trabajos-cards {
 /* imágenes */
 .estilo-img {
   height: 25rem;
+
 }
 
 
@@ -386,9 +476,10 @@ h3.trabajos-cards {
 
 
 /*Contacto*/
-.formulario{
+.formulario {
   margin-bottom: 2.50rem;
 }
+
 .reserva {
   width: 100%;
   padding: 20px 0 20px 0;
@@ -416,6 +507,23 @@ h5 {
   white-space: nowrap;
   background-color: #e9ecef;
   border: 1px solid #ced4da;
+}
+
+.form-check-input:focus {
+  border-color: #201310c7;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba($color-ruff, 0.25);
+}
+
+.form-check-input:checked {
+  background-color: $color-ruff;
+  border-color: $color-ruff;
+}
+
+.form-select:focus {
+  border-color: #201310c7;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba($color-ruff, 0.25);
 }
 
 /* Media Queries */
