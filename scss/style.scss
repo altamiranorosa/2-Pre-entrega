@@ -266,50 +266,6 @@ h3.trabajos-cards {
   padding: 1rem;
 }
 
-.gal-boulan:hover {
-  .pulse {
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-
-  @-webkit-keyframes pulse {
-    0% {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-
-    50% {
-      -webkit-transform: scale3d(1.05, 1.05, 1.05);
-      transform: scale3d(1.05, 1.05, 1.05);
-    }
-
-    100% {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-  }
-
-  @keyframes pulse {
-    0% {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-
-    50% {
-      -webkit-transform: scale3d(1.05, 1.05, 1.05);
-      transform: scale3d(1.05, 1.05, 1.05);
-    }
-
-    100% {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-  }
-}
 
 
 
@@ -525,6 +481,18 @@ h5 {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba($color-ruff, 0.25);
 }
+.was-validated .form-check-input:valid:focus, .form-check-input.is-valid:focus {
+  box-shadow: 0 0 0 0.25rem rgba($color-ruff, 0.25);
+}
+.form-check-input:checked {
+  background-color: $color-ruff;
+  border-color:$color-ruff;
+}
+
+
+
+
+
 
 /* Media Queries */
 @import "partials/queries";
