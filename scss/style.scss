@@ -23,24 +23,42 @@
   font-size: 2rem;
 }
 
-
 /*Footer*/
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+footer {
+  margin-top: auto;
+}
+
 .estfoot {
   font-family: $fontfam-xlight;
   font-size: small;
   background-color: $color-ruff;
-  margin: 0;
   display: flex;
   justify-content: center;
 }
 
+ul li .estilo-redes {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: .325rem;
+  margin-right: .325rem;
+  margin-bottom: .5rem;
+}
 
 /*Botones*/
 .btn {
   font-family: $fontfam-light;
   border-radius: 1.2rem;
 }
-
 
 /*Textos*/
 em {
@@ -49,15 +67,20 @@ em {
 }
 
 /*Background*/
-body {
-  min-height: 100hv;
+.bkg-ruff {
+  min-height: 100vh;
   background: linear-gradient(rgba(247, 246, 255, .85), rgba(247, 246, 255, .85)), url(../media/imagenesvarias/optimizado.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
-
+/*Márgenes*/
+.tamano {
+  margin: .5rem;
+  margin-bottom: 2rem;
+}
 
 /*Index*/
 .index-bg {
@@ -67,7 +90,7 @@ body {
   background-size: cover;
 }
 
-.grid_index {
+.grid-galfotos {
   display: flex;
   width: 100%;
   margin-top: 2.5rem;
@@ -75,14 +98,12 @@ body {
   padding: 0;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
-.gal_index {
+.gal-fotos {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .ruff_es {
@@ -108,11 +129,6 @@ body {
   color: $color-ruff;
 }
 
-.tamano {
-  margin: .5rem;
-  margin-bottom: 2rem;
-}
-
 .text_ruff {
   width: 100%;
   font-family: $fontfam-light;
@@ -129,11 +145,9 @@ body {
   width: 100%;
   font-family: $fontfam-light;
   font-size: $fontsizeparrafo;
-
   justify-content: center;
   text-align: justify;
 }
-
 
 .qs {
   font-family: $fontfam-regular;
@@ -150,8 +164,7 @@ body {
   padding-top: 2rem;
   text-align: center;
   text-align: center;
- 
-}
+ }
 
 h2 {
   font-family: $fontfam-medium;
@@ -172,7 +185,6 @@ h2 {
   gap: 1.25rem;
   padding: 1rem;
   justify-content: center;
-
 }
 
 .tit-tat {
@@ -217,8 +229,6 @@ h2 {
 
 
 
-
-
 /*Bakery*/
 
 .hbk {
@@ -246,7 +256,6 @@ h2 {
 .pedido {
   height: 15rem;
   padding-top: 12rem;
-
 }
 
 /*Imagenes*/
@@ -266,8 +275,6 @@ h3.trabajos-cards {
   justify-content: center;
   padding: 1rem;
 }
-
-
 
 
 
@@ -396,9 +403,7 @@ h3.trabajos-cards {
 /* imágenes */
 .estilo-img {
   height: 25rem;
-
 }
-
 
 .foto img {
   width: auto;
@@ -407,15 +412,6 @@ h3.trabajos-cards {
 }
 
 .grid_galeriadearte {
-  display: flex;
-  width: 100%;
-  margin: .32rem;
-  padding: .625rem;
-  justify-content: center;
-  align-content: center;
-}
-
-.prueba_galeria {
   display: flex;
   width: 100%;
   margin: .32rem;
@@ -477,21 +473,14 @@ h5 {
   border-color: $color-ruff;
 }
 
-.form-select:focus {
-  border-color: #201310c7;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba($color-ruff, 0.25);
-}
 .was-validated .form-check-input:valid:focus, .form-check-input.is-valid:focus {
   box-shadow: 0 0 0 0.25rem rgba($color-ruff, 0.25);
 }
+
 .form-check-input:checked {
   background-color: $color-ruff;
   border-color:$color-ruff;
 }
-
-
-
 
 
 
