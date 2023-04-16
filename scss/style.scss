@@ -157,7 +157,7 @@ em {
   padding-top: 2rem;
   text-align: center;
   text-align: center;
- }
+}
 
 h2 {
   font-family: $fontfam-medium;
@@ -310,6 +310,7 @@ h3.trabajos-cards {
   text-align: justify;
   justify-content: center;
 }
+
 .barpres2 {
   margin-bottom: 2rem;
   padding-top: 1rem;
@@ -440,13 +441,6 @@ h3.trabajos-cards {
   font-size: xx-large;
 }
 
-h5 {
-  margin: 0;
-  padding: 20px 0 5px 0;
-  font-family: $fontfam-medium;
-  text-align: left;
-}
-
 .input-group-text {
   color: $color-ruff;
   text-align: center;
@@ -466,14 +460,96 @@ h5 {
   border-color: $color-ruff;
 }
 
-.was-validated .form-check-input:valid:focus, .form-check-input.is-valid:focus {
+.was-validated .form-check-input:valid:focus,
+.form-check-input.is-valid:focus {
   box-shadow: 0 0 0 0.25rem rgba($color-ruff, 0.25);
 }
 
 .form-check-input:checked {
   background-color: $color-ruff;
-  border-color:$color-ruff;
+  border-color: $color-ruff;
 }
+
+.mapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .5rem;
+  margin-bottom: 3rem;
+  }
+
+.direccion {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.ubicacion {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-bottom: 3rem;
+}
+
+
+
+
+/*Página Error 404*/
+main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page_404 {
+  display: flex;
+  padding: 2.5rem 0;
+  background: #fff;
+
+}
+
+.page_404 img {
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  width: 100%;
+  height: 40rem;
+  background-position: center;
+}
+
+.link_404 {
+  color: #ffffff !important;
+  padding: 0.625rem 1.25rem;
+  background: $color-ruff;
+  display: inline-block;
+}
+
+.contant_box_404 {
+  width: 100%;
+  margin-top: -8rem;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-error {
+  display: flex;
+  font-family: jodie_garland\regular;
+  font-size: $fontsizetitulo;
+  color: $color-ruff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $color-ruff;
+}
+
+
+
 
 
 
